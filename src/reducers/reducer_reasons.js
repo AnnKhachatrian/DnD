@@ -24,16 +24,16 @@ export default function(state=reasons, action) {
           }
         ];
       case 'EDIT':  
-          return state.map((todo) => 
-            (todo.id === action.payload.id)
-              ? {...todo, text: action.payload.text}
-              : todo       
+          return state.map((item) => 
+            (item.id === action.payload.id)
+              ? {...item, text: action.payload.text}
+              : item       
           )
       case 'EDIT_TYPE': 
-        return state.map(todo =>
-          (todo.id === action.payload.id)
-            ? {...todo, type: action.payload.type}
-            : todo
+        return state.map(item =>
+          (item.id === action.payload.id)
+            ? {...item, type: action.payload.type}
+            : item
         )
 
       case 'DEL':
