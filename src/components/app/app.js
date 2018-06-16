@@ -7,10 +7,11 @@ export default class App extends Component {
       <div className="main">
         <div className="main-row"> 
           <header className="header">                
-            <p className="title">Should I eat at <span>McDonalds?</span></p>
+            <p className="redText">Should I eat at <span>McDonalds?</span></p>
           </header>
           <Board/>
           <footer>
+            <p className="redText">Press "Enter" to add, edit or delete</p>            
             <img 
               className="mcdonalds-icon" 
               src="https://png.icons8.com/color/1600/mcdonalds-french-fries.png"
